@@ -28,5 +28,14 @@
         
     </header>
 
+    <script>
+        const menuButton = document.querySelector('.menu-button')
+        const navlist = document.querySelector('.nav-list')
+
+        menuButton.addEventListener('click',()=>{
+            navlist.classList.toggle('mobile-menu')
+        })
+    </script>
+
 </body>
 </html>
