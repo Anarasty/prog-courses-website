@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300&display=swap');
+
+/* font-family: 'Inconsolata', monospace; */
+/* font-family: 'Red Hat Mono', monospace; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: rgb(255, 255, 255);
+    --turquoise : turquoise;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* NAVIGATION STYLING */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    color: var(--white);
+    font-family: 'Inconsolata', monospace;
+}
+.logo {
+    font-size: 5vmin;
+    margin-left: 20px;
+    font-weight: 900;
+
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0px 20px;
+    font-size: 3vmin;
+    border: 3px solid var(--white);
+    padding: 4px;
+    border-radius: 10px;
+}
+
+.nav-list a {
+    color: var(--white);
+    transition: all 1s ease;
+}
+
+.nav-list a:hover {
+    color: turquoise;
+} 
+
+.menu-button {
+    display: none;
+    color: var(--white);
+    font-size: 4vmin;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    }
+
+/* HEADER SECTION */
+
+header {
+    background-image:linear-gradient(rgb(0,0,0,0.4),rgb(0,0,0,0.4)), url(assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Inconsolata', monospace; 
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .navbar{
+        padding: 0; 
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 20px;
+        left: 40px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .nav-list li {
+        margin: 20px auto;
+    }
+
+}
