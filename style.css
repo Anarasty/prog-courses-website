@@ -14,6 +14,7 @@
     --white: rgb(255, 255, 255);
     --turquoise : turquoise;
     --blue: rgb(0, 68, 255);
+    --grey: rgb(80, 80, 80);
 }
 
 body, html {
@@ -125,81 +126,6 @@ header {
     width: 80%;
 }
 
-
-/* ABOUT STYLING */
-
-.about .row {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    height: 60vh;
-    margin: 0px auto;
-    font-family: 'Red Hat Mono', monospace;
-}
-
-.about-left {
-    width: 30%;
-}
-
-.about h2{
-    text-align: center;
-    font-size: 3.5vmin;
-    margin: 50px 0px;
-}
-
-.about p{
-    font-size: 2vmin;
-    font-weight: 900;
-    text-align: justify;
-    margin: 50px 40px;
-}
-
-.about-center {
-    text-align: center;
-    width: 30%;
-    font-size: 2.5vmin;
-    /* margin: 50px 0px; */
-}
-.about-right {
-    width: 30%;;
-}
-
-.about-center img {
-    margin: 30px 0px;
-    width: 98%;
-    border-radius: 50%;
-    transition: all 0.3s ease ;
-}
-
-.about-center img:hover{
-    transform: scale(1.1);
-}
-
-.about a {
-    margin: 0px 40px;
-    padding: 5px;
-    border: 5px solid var(--blue);
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px  black;
-    color: var(--white);
-    font-size: 2.5vmin;
-    font-weight: 900;
-    transition: all 0.5s ease;
-    background-color: var(--blue);
-}
-
-.about a:hover {
-    color: black;
-    border: 5px solid black;
-    border-radius: 20px;
-    box-shadow: 0px 5px 20px black;
-    background-color: var(--turquoise);
-}
-
-
-
-
-
 @keyframes progAnim{
     50% {
         color: var(--turquoise);
@@ -222,6 +148,23 @@ header {
     line-height: 5vmin;
 }
 
+/* ABOUT STYLING */
+
+.about .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+    background: chartreuse;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 @media screen and (max-width: 992px) {
