@@ -260,22 +260,44 @@ header {
 
 /* TEACHERS SECTION STYLING */
 
+.teachers .title {
+    text-align: center;
+    font-size: 4vmin;
+    font-family: 'Red Hat Mono', monospace;
+}
+
 .teachers .row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     margin: 60px auto;
     text-align: center;
     font-family: 'Red Hat Mono', monospace;
-    background: var(--grey);
-    color: var(--white);
 }
 
 .teachers img {
     width: 50%;
+    border-radius: 100px;
+    margin: 40px auto;
+    transition: 0.5s ease;
 }
 
+.teachers img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px var(--turquoise);
+}
+
+.teachers h2 {
+    font-size: 3.5vmin;
+    line-height: 2;
+}
+
+.teachers p {
+    font-size: 2.5vmin;
+    font-weight: 900;
+    line-height: 1.7;
+}
 
 
 @media screen and (max-width: 992px) {
