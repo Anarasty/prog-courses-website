@@ -29,6 +29,12 @@ ul {
     list-style: none;
 }
 
+.line {
+    margin: 30px auto;
+    width: 70%;
+    border-top: 10px solid var(--turquoise);
+    border-radius: 20px;
+}
 
 /* NAVIGATION STYLING */
 .navbar {
@@ -154,16 +160,102 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-top: 60px;
+    width: 90%;
+    margin: 60px auto;
     text-align: center;
-    background: chartreuse;
+    font-family: 'Red Hat Mono', monospace;
 }
 
 .row .col {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 30%;
+}
+
+.about h2 {
+    font-size: 3.5vmin;
+    margin: 40px auto;
+}
+
+.about p {
+    margin: 20px auto;
+    text-align: left;
+    font-weight: 900;
+    font-size: 2.5vmin;
+}
+
+.about img {
+    width: 90%;
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+.about img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ABOUT2 STYLING */
+
+.about2 .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    font-family: 'Red Hat Mono', monospace;
+    background: var(--grey);
+    color: var(--white);
+}
+
+.about2 .content{
+    width: 50%;
+}
+
+.about2 h2 {
+    font-size: 4vmin;
+    margin: 30px auto;
+}
+
+.about2 p {
+    font-size: 3vmin;
+    margin: 20px 40px;
+    text-align: left;
+}
+
+.about2 .cards {
+    width: 50%;
+}
+
+.cards-content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.cards-content img {
+    max-width: 200px;
+    margin: 80px;
+}
+
+@keyframes imgAnimation2 {
+    0% {
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.cards-content img {
+    animation-name: imgAnimation2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -211,14 +303,12 @@ header {
         align-items: center;
     }
 
-    .about-left {
+    .row .col {
         width: 80%;
     }
 
-    .about-center {
-        width: 80%;
-    }
-    .about-right {
-        width: 80%;
+    .cards-content {
+        justify-content: center;
+        
     }
 }
