@@ -236,7 +236,7 @@ header {
     align-items: center;
 }
 .cards-content img {
-    max-width: 200px;
+    width: 20%;
     margin: 80px;
 }
 
@@ -257,6 +257,25 @@ header {
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+
+/* TEACHERS SECTION STYLING */
+
+.teachers .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 60px auto;
+    text-align: center;
+    font-family: 'Red Hat Mono', monospace;
+    background: var(--grey);
+    color: var(--white);
+}
+
+.teachers img {
+    width: 50%;
+}
+
 
 
 @media screen and (max-width: 992px) {
