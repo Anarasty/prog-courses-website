@@ -297,7 +297,95 @@ header {
     font-size: 2.5vmin;
     font-weight: 900;
     line-height: 1.7;
+    text-align: justify;
 }
+
+/* CONTACT SECTION STYLING */
+.contact .row {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    align-items: center;
+    width: 70%;
+    text-align: center;
+    font-family: 'Red Hat Mono', monospace;
+    line-height: 1.5;
+}
+
+.contact h1 {
+    font-size: 5vmin;
+    margin: 40px auto;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.contact label {
+    font-size: 3vmin;
+    font-weight: 900;
+}
+
+.contact input {
+    width: 50%;
+    font-size: 2vmin;
+    font-weight: 600;
+    padding: 20px;
+    /* background: rgb(216, 216, 216); */
+    background: linear-gradient(90deg, rgba(0,231,203,0.5) 0%, rgba(0,212,255,0.5) 100%);
+}
+
+.contact textarea {
+    width: 50%;
+    padding: 20px;
+    resize: none;
+    background: linear-gradient(90deg, rgba(0,231,203,0.3) 0%, rgba(0,212,255,0.3) 100%);
+}
+
+.contact input[type=submit]{
+    border: 5px solid var(--turquoise);
+    border-radius: 30px;
+    background: linear-gradient(90deg, rgba(0,231,203,1) 0%, rgba(0,212,255,1) 100%);
+    cursor: pointer;
+    font-size: 3vmin;
+    transition: 0.5s ease;
+}
+
+.contact input[type=submit]:hover{
+    box-shadow: 0px 0px 20px black;
+}
+
+/* FOOTER STYLING */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: var(--grey);
+    color: var(--white);
+    font-family: 'Red Hat Mono', monospace;
+}
+
+footer h2 {
+    font-size: 2vmin;
+    margin: 30px auto;
+}
+
+
+/* .contact input[type=text] {
+    border: 4px solid var(--turquoise);
+    border-radius: 20px;
+    padding: 8px;
+    background-color: rgb(216, 216, 216);
+
+} */
+
+
 
 
 @media screen and (max-width: 992px) {
@@ -352,4 +440,5 @@ header {
         justify-content: center;
         
     }
+
 }
