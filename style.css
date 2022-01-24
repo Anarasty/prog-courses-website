@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -438,7 +439,18 @@ footer h2 {
 
     .cards-content {
         justify-content: center;
-        
+    }
+    
+    .contact .row {
+        width: 100%;
+        line-height: normal;
     }
 
+    .contact input {
+        width: 60%;
+    }
+
+    .contact textarea {
+        width: 60%;
+    }
 }
